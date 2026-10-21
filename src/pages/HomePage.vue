@@ -29,7 +29,7 @@ const PicturesItems = Object.values(Pictures).map((picture, index) => ({
       <i class="pi pi-map-marker" style="color: var(--p-primary-color); margin-right: 0.25rem" />
       {{ subtitle }}
     </SubtitleH3>
-    <TitleH2>R$ 380.000,00</TitleH2>
+    <TitleH2>R$ 350.000,00</TitleH2>
 
     <div class="icon-details">
       <IconDetail icon="pi pi-expand" title="54m²" subtitle="Área privativa" />
@@ -90,16 +90,19 @@ const PicturesItems = Object.values(Pictures).map((picture, index) => ({
       gap: 16px;
       min-width: 300px;
     }
+
     &__maps-button {
       margin-top: 32px;
     }
   }
 }
+
 .icon-details {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   padding: 1rem;
   gap: 3rem;
+
   @media (min-width: 768px) {
     grid-template-columns: repeat(4, 1fr);
   }
